@@ -16,7 +16,7 @@ describe('calculateNumber', () => {
 
     it('round of a and b', () => {
         assert.equal(calculateNumber(2.1, 2.1), 4);
-        assert.equal(calculateNumber(2.5, 2.5), 5);
+        assert.equal(calculateNumber(2.5, 2.5), 6);
         assert.equal(calculateNumber(2.4, 2.5), 5);
         assert.equal(calculateNumber(2.9, 2.9), 6);
     });
