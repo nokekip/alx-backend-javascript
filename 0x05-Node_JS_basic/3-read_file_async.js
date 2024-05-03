@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-async function countStudents (path) {
+async function countStudents(path) {
     let data;
     try {
         data = await fs.promises.readFile(path, 'utf8');
@@ -17,7 +17,7 @@ async function countStudents (path) {
             field: student[3]
         }));
 
-    const csStudents =  students
+    const csStudents = students
         .filter((student) => student.field === 'CS')
         .map((student) => student.firstName);
     const sweStudents = students
